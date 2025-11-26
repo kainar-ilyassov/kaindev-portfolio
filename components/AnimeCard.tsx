@@ -10,6 +10,7 @@ interface AnimeCardProps {
   delay?: number;
   hoverEffect?: boolean;
   onMouseEnter?: () => void;
+  onClick?: () => void;
 }
 
 const AnimeCard: React.FC<AnimeCardProps> = ({ 
@@ -20,7 +21,8 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
   variant = 'primary',
   delay = 0,
   hoverEffect = true,
-  onMouseEnter
+  onMouseEnter,
+  onClick
 }) => {
   const styles = {
     primary: {
@@ -55,6 +57,7 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
       className={`relative group ${className} transition-opacity duration-500`}
       style={{ animationDelay: `${delay}ms` }}
       onMouseEnter={handleMouseEnter}
+      onClick={onClick}
     >
       {/* Hover border expansion */}
       <div className={`absolute -inset-[1px] ${s.bg} opacity-20 group-hover:opacity-40 clip-corner transition-opacity duration-300`} />

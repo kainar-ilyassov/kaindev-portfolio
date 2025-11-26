@@ -243,7 +243,7 @@ function App() {
                 {/* Image Container */}
                 <div className="absolute inset-6 rounded-full overflow-hidden border-4 border-anime-dark/50 ring-2 ring-anime-neon/50 shadow-[0_0_50px_rgba(0,243,255,0.2)]">
                   <img 
-                    src="https://picsum.photos/seed/kainar/600/600?grayscale" 
+                    src="/avatar.jpg" 
                     alt="Kainar Ilyasov" 
                     className="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal hover:scale-110 transition-all duration-700"
                   />
@@ -251,12 +251,12 @@ function App() {
                 </div>
 
                 {/* Floating Info Cards */}
-                <div className="absolute -right-4 top-1/4 bg-anime-dark/90 backdrop-blur border border-anime-neon p-3 clip-corner shadow-lg animate-float delay-500">
+                <div className="absolute -right-12 top-1/4 bg-anime-dark/90 backdrop-blur border border-anime-neon p-3 clip-corner shadow-lg animate-float delay-500">
                   <div className="text-anime-neon font-display font-bold text-2xl">LVL. 99</div>
                   <div className="text-[10px] text-gray-400 font-mono tracking-wider">SENIOR FRONTEND DEVELOPER</div>
                 </div>
 
-                <div className="absolute -left-4 bottom-1/4 bg-anime-dark/90 backdrop-blur border border-anime-pink p-3 clip-corner-inv shadow-lg animate-float delay-0">
+                <div className="absolute -left-12 bottom-1/4 bg-anime-dark/90 backdrop-blur border border-anime-pink p-3 clip-corner-inv shadow-lg animate-float delay-0">
                   <div className="text-anime-pink font-display font-bold text-xl">6+ YEARS</div>
                   <div className="text-[10px] text-gray-400 font-mono tracking-wider">EXP. GAINED</div>
                 </div>
@@ -285,10 +285,14 @@ function App() {
             {PROJECTS_DATA.map((project, index) => (
               <ScrollReveal key={project.id} delay={`${index * 0.1}s`}>
                 <AnimeCard 
-                  className="h-full" 
+                  className="h-full cursor-pointer" 
                   title={project.title} 
                   subtitle={`ROLE: ${project.role.toUpperCase()}`}
                   variant={index % 2 === 0 ? 'primary' : 'secondary'}
+                  onClick={() => {
+                    playClickSound();
+                    if (project.url) window.open(project.url, '_blank', 'noopener,noreferrer');
+                  }}
                 >
                   <div className="group/image relative aspect-video mb-6 overflow-hidden border border-white/10">
                     <img 

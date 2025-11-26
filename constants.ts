@@ -109,7 +109,8 @@ export const PROJECTS_DATA: Project[] = [
     role: 'Lead Developer',
     tech: ['React', 'MSAL', 'MUI'],
     description: 'Secure enterprise inventory system with complex CRUD operations and Azure AD authentication.',
-    image: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070&auto=format&fit=crop',
+    url: 'https://www.chevron.com/'
   },
   {
     id: 'p2',
@@ -117,7 +118,8 @@ export const PROJECTS_DATA: Project[] = [
     role: 'Senior Dev',
     tech: ['React', 'Jest', 'Redux'],
     description: 'Worldwide booking platform for flights/hotels with automated multi-city ticketing logic.',
-    image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop',
+    url: 'https://www.spotnana.com/'
   },
   {
     id: 'p3',
@@ -125,7 +127,8 @@ export const PROJECTS_DATA: Project[] = [
     role: 'Architect',
     tech: ['WebSockets', 'React', 'Node'],
     description: 'High-load video streaming platform with millions of daily users and live moderation tools.',
-    image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop',
+    url: 'https://smart-x.net/'
   },
   {
     id: 'p4',
@@ -133,6 +136,7 @@ export const PROJECTS_DATA: Project[] = [
     role: 'Creative Dev',
     tech: ['GreenSock', 'React', 'Sass'],
     description: 'Interactive, high-end animated web applications for clients like Netflix and Amazon.',
-    image: 'https://images.unsplash.com/photo-1616469829941-c7200edec809?q=80&w=2070&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1616469829941-c7200edec809?q=80&w=2070&auto=format&fit=crop',
+    url: 'https://www.monks.com/'
   }
 ];
