@@ -225,7 +225,7 @@ function App() {
                <CyberButton 
                  text="DOWNLOAD CV" 
                  icon={Download} 
-                 href="/Kainar_Ilyasov_CV.pdf"
+                 href={`${import.meta.env.BASE_URL}Kainar_Ilyasov_CV.pdf`}
                  download="Kainar_Ilyasov_CV.pdf"
                  variant="pink"
                  onClick={playClickSound}
@@ -243,7 +243,7 @@ function App() {
                 {/* Image Container */}
                 <div className="absolute inset-6 rounded-full overflow-hidden border-4 border-anime-dark/50 ring-2 ring-anime-neon/50 shadow-[0_0_50px_rgba(0,243,255,0.2)]">
                   <img 
-                    src="/avatar.jpg" 
+                    src={`${import.meta.env.BASE_URL}avatar.jpg`} 
                     alt="Kainar Ilyasov" 
                     className="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal hover:scale-110 transition-all duration-700"
                   />
